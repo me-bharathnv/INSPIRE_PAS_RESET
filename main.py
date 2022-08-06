@@ -6,7 +6,7 @@ import openpyxl
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-path = "E:/inspire.xlsx" #Excel file path
+path = "  " #Excel file path
 
 wb = openpyxl.load_workbook(path)
 
@@ -16,8 +16,8 @@ browser = webdriver.Chrome(executable_path="C:/Users/USER/OneDrive/Desktop/chrom
 
 browser.get("https://www.inspireawards-dst.gov.in/UserC/login.aspx?to=2")
 time.sleep(5)
-browser.find_element(By.ID, "ctl00_ContentPlaceHolder1_txtUserId").send_keys("tumkur77")
-browser.find_element(By.ID, "ctl00_ContentPlaceHolder1_txtPassword").send_keys("Diet@t22")
+browser.find_element(By.ID, "ctl00_ContentPlaceHolder1_txtUserId").send_keys(" ") # login username
+browser.find_element(By.ID, "ctl00_ContentPlaceHolder1_txtPassword").send_keys(" ") # password
 time.sleep(5)
 browser.find_element(By.ID, "ctl00_ContentPlaceHolder1_txtCaptchaText").send_keys(input(str()))
 time.sleep(10)
